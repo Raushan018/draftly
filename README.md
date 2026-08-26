@@ -2,6 +2,8 @@
 
 ## Overview
 
+video link https://youtu.be/YCHUeQDStGE
+
 Draftly is a collaborative rich-text document editor built as a take-home assessment. Users can create, edit, search, import, and share documents with each other, with per-document owner/viewer/editor permissions backed by a real PostgreSQL database.
 
 Multi-user behavior is demonstrated through a **seeded-user switcher** rather than real authentication — see [Authentication](#authentication-simulated) below for exactly what that does and doesn't mean.

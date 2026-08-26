@@ -1,5 +1,8 @@
 # AI Workflow
 
+https://youtu.be/YCHUeQDStGE
+video link https://youtu.be/YCHUeQDStGE
+
 Honest account of how AI assistance was used to build Draftly, and how everything it produced was verified. This is not a marketing document — it names specific places AI helped, specific places its first pass was wrong or overbuilt, and how correctness was actually checked before anything was accepted.
 
 ## AI Tools Used
