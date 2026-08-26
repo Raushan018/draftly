@@ -54,7 +54,7 @@ export function DocumentEditor({
     async (json: JSONContent) => {
       setStatus("saving");
       try {
-        const result = await updateDocumentContent(documentId, json);
+        const result = await updateDocumentContent(documentId, JSON.stringify(json));
         if (result.ok) {
           pendingRetryRef.current = null;
           setStatus("saved");

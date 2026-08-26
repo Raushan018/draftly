@@ -36,8 +36,15 @@ type ActionResult = { ok: true } | { ok: false; error: string };
 
 export async function updateDocumentContent(
   id: string,
-  content: unknown,
+  contentJson: string,
 ): Promise<ActionResult> {
+  let content: unknown;
+  try {
+    content = JSON.parse(contentJson);
+  } catch {
+    return { ok: false, error: "Invalid document content." };
+  }
+
   const parsed = updateDocumentContentSchema.safeParse({ id, content });
   if (!parsed.success) {
     return { ok: false, error: "Invalid document content." };
